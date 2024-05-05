@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #333;
+      padding-top: 20px;
+      color: #fff;
+    }
+    #sidebar .nav-link {
+      color: #fff;
+      padding: 10px 15px;
+    }
+    #sidebar .nav-link i {
+      margin-right: 10px;
+    }
+    #content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card-title {
+      font-size: 20px;
+      color: #333;
+    }
+    .card-text {
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div id="sidebar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-box"></i> Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Sales</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-users"></i> Customers</a>
+    </li>
+  </ul>
+</div>
+
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-info text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-shopping-cart"></i> Total Orders</h5>
+            <p class="card-text">385</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-success text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-dollar-sign"></i> Total Revenue</h5>
+            <p class="card-text">$48,750</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-warning text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-users"></i> Active Customers</h5>
+            <p class="card-text">780</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
